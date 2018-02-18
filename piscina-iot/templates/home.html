@@ -1,0 +1,75 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+	  <style type='text/css'>
+		.text_color{
+			color: #ff7600;
+
+			}
+		</style>
+		
+		
+<div class="container-fluid">
+    <div class="jumbotron text-center" style="background:#ff7600!important">
+        <h1> Flask no Galileo e kit Grove </h1>
+        <p>
+            Exemplo de controle de atuadores e leitura de sensores
+            utilizando flask e as bibliotecas upm e wiringx86.
+        </p>
+        <p>
+            A atualização
+            dos valores dos sensores é feita via ajax com jquery e os dados
+            salvos em um banco sqlite.
+        </p>
+    </div>
+<div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+    <div class="item active">
+      <img src="static/img/iot.jpg" alt="Chania">
+      <div class="carousel-caption text_color" >
+        <h1><strong>IoT</strong></h1>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="static/img/galileo.jpg" alt="Flower">
+      <div class="carousel-caption">
+        <h1><strong>Galileo</strong></h1>
+        <p>Placa de desenvolvimento Intel Galileo Gen 1.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="static/img/grove.jpg" alt="Flower">
+      <div class="carousel-caption text_color">
+        <h1><strong>Kit grove</strong></h1>
+        <p>Foto do kit grove didático.</p>
+      </div>
+    </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+    </a>
+</div>
+</div>
+</div>
+{% endblock %}
